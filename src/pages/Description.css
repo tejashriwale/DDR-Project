@@ -1,0 +1,85 @@
+.table-scroll-container {
+  overflow-x: auto; /* Allows horizontal scrolling */
+  overflow-y: auto; /* Allows vertical scrolling */
+  max-height: 400px; /* Adjust the height as needed */
+  margin-bottom: 50px;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  position: relative; /* Ensure the scrollbars appear within this container */
+}
+
+table {
+  width: 100%;
+  table-layout: fixed; /* Ensures columns are of fixed width */
+  border-collapse: collapse; /* Collapses borders to remove spacing */
+  background-color: #f0f8ff;
+}
+
+th, td {
+  border: 1px solid #ccc; /* Lighter border color */
+  padding: 8px;
+  text-align: left;
+}
+.af{
+  border: 1px solid #ccc;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 2; /* Ensure it stays on top */
+  background-color: #e6f7ff; /* Background color for the header */
+}
+
+th:first-child, td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: rgb(185, 235, 252); /* Apply background color */
+  color: #000000; /* Apply text color */
+  z-index: 1; /* Ensure it stays on top */
+}
+
+input[type="text"], select {
+  width: 100%;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+.aRight {
+  text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f0f8ff5b;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e6f7ff5e;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a4c1e7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a4c1e7;
+}
+
+.button-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-container .btn {
+  margin-left: 10px;
+}

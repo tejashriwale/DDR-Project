@@ -1,0 +1,62 @@
+/* Home.css */
+#hero {
+    padding: 5rem 0;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #003d6b; /* Example color */
+}
+
+.hero-subtitle {
+    font-size: 1.125rem;
+    color: #333; /* Example color */
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Example primary color */
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Example secondary color */
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem; /* Rounded corners */
+    opacity: 0;
+    transform: scale(0.8); /* Start scaled down */
+    animation: scaleup 2s ease-in-out forwards; /* Adjust duration as needed */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+.img-fluid:hover {
+    transform: translateX(10px) translateY(-10px) scale(1.1); /* Scale up slightly and move up */
+   
+}
+
+@keyframes scaleup {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

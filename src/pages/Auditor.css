@@ -1,0 +1,12 @@
+.fixed-label {
+    width: 200px; /* Fixed width for labels */
+    min-width: 150px; /* Minimum width to prevent shrinking */
+}
+
+
+  @media (max-width: 991.98px) {
+    .fixed-label {
+      width: auto; /* Allow label width to adjust on smaller screens */
+    }
+  }
+  
